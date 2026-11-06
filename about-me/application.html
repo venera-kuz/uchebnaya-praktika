@@ -23,7 +23,7 @@
         данные. Заявка не сохраняется и не поступает организатору</p>
     <form action="application.html" method="get">
         <p>
-            <label for="student">Венера</label>
+            <label for="student">Учебное имя</label>
             <input id="student" name="student" type="text" minlength="2" required>
         </p>
         <p>
@@ -64,7 +64,7 @@
         </p>
         <p>
             <label for="comment">Чему хотите научиться</label>
-            <textarea id="comment" name="comment" rows="4" maxlength="300" required></textarea>
+            <textarea id="comment" name="comment" rows="4" maxlength="30" minlength="5" required></textarea>
         </p>
         <button type="submit">Отправить учебный пример</button>
         <button type="reset">Сбросить поля</button>
