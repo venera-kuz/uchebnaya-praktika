@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный клуб</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Главное меню">
+          <ul>
+            <li><a href="index.html">Обо мне</a></li>
+            <li><a href="hobby.html">Мои увлечения</a></li>
+            <li><a href="college.html">Мой колледж</a></li>
+            <li><a href="season.html">Время года</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="application.html">Заявка</a></li>
+            <li><a href="club.html">Клуб</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+    <h1>Учебный клуб</h1>
+    <h2>О клубе</h2>
+    <p>Наш учебный клуб приглашает вас! Ждем всех студентов!</p>
+    <h2>Новость клуба</h2>
+    <p>Наш клуб объявляет набор! Мы ждем новых студентов желающих прийти к нам! <br> 
+    В клубе ваша жизнь станет интереснее и активнее!</p>
+    <table>
+        <caption>Таблица встреч на неделю</caption>
+        <thead>
+            <tr>
+                <th scope="col">День</th>
+                <th scope="col">Тема</th>
+                <th scope="col">Кабинет</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Понедельник</th>
+                <td>Мероптиятия в колледже</td>
+                <td>101</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Вторник</th>
+                <td>Дизайн</td>
+                <td>115</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Среда</th>
+                <td>Git</td>
+                <td>118</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2" scope="row">Всего встреч</th>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Заявка на вступление в клуб</h2>
+    <p>Это учебная форма. Вводите вымышленные
+        данные. Заявка не сохраняется и не поступает организатору</p>
+    <form action="club.html" method="get">
+        <p>
+            <label for="student">Имя</label>
+            <input id="student" name="student" type="text" minlength="2" required>
+        </p>
+        <p>
+            <label for="topic">Формат встре</label>
+            <select id="topic" name="topic" required>
+                <option value="">Выберите</option>
+                <option value="offline">Дистанционно</option>
+                <option value="online">Онлайон</option>
+            </select>
+        </p>
+        <button type="submit">Отправить заявку</button>
+        <button type="reset">Сбросить поля</button>
+    </form>
+</main>
+    <footer>
+        <p>Автор:Кузьмина Венера. Учебная практика УП.09.</p>
+      </footer>
+</body>
+</html>
