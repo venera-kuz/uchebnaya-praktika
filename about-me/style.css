@@ -275,6 +275,7 @@ input[type="checkbox"] {
 .grid-item{
     padding: 1rem;
     border: 1px solid #6f8498;
+    grid-column: 1 / -1;
 }
 .grid-item-total { 
     grid-column: 1 / -1; 
@@ -297,6 +298,9 @@ input[type="checkbox"] {
         gap: 1rem;
     }
     .product-card {
+        position: relative;
+        padding-top: 3rem;
+
         display: flex;
         flex-direction: column;
     
@@ -308,6 +312,17 @@ input[type="checkbox"] {
     
         background-color: #ffffff;
     }
+    .card-badge { 
+        position: absolute; 
+        top: 0.75rem; 
+        right: 0.75rem; 
+        padding: 0.25rem 0.5rem; 
+        border-radius: 0.25rem; 
+        color: #ffffff; 
+        background-color: #8a2c2c; 
+        font-size: 0.8rem; 
+        font-weight: 700; 
+    } 
     .product-card img {
         width: 100%;
         max-width: 100%;
@@ -366,5 +381,90 @@ input[type="checkbox"] {
         display: inline-block;
         padding: 0.35rem 0.6rem;
     }
+    .back-to-top { 
+        margin-top: 2rem; 
+        text-align: right; 
+    }
     
-    
+    .back-to-top a { 
+        display: inline-block; 
+        padding: 0.5rem 0.75rem; 
+    } 
+ *, *::before, *::after { box-sizing: border-box; }
+
+ img { max-width: 100%; height: auto; }
+
+ .page-container {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+ }
+
+ .responsive-hero {
+    display: grid;
+    gap: 1.25rem;
+    align-items: center;
+    padding-block: 1.5rem;
+ }
+
+ .responsive-hero img {
+    width: 100%;
+    border-radius: 0.75rem;
+ }
+
+ .feature-grid {
+    display: grid;
+    gap: 1rem;
+ }
+
+ .feature-grid article {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #103152;
+    border-radius: 0.5rem;
+ }
+ @media (min-width: 48rem ) {
+    .responsive-hero{
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .adaptive-stats{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+        
+ }
+ @media (min-width: 70rem) {
+    .feature-grid {
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .responsive-hero {
+        gap: 2.5rem;
+    }
+    .adaptive-stats{
+        
+        grid-template-columns: repeat(4, 1fr)
+    }
+ }
+
+ .catalog-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1rem;
+ }
+ .adaptive-stats{
+    display:grid;
+    grid-template-columns: 1fr;;
+    gap: 1.5rem;
+    font-size: 1rem
+ }
+
+ .feature-grid article {
+    word-break: break-all;
+ }
+
+
+
